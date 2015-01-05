@@ -31,21 +31,21 @@ function generate_random_password(l,u,n,s) {
 	$('#random_password_text').html(randomstring);
 }
 </script>
-<form name="random_password_form" id="random_password_form">
 <table class="form-table">
 <thead></thead>
 <tbody>
 <tr>
 <th scope="row">
-<label for="random_password"><?php _e("Random Password Length", "bodi0-password-generator"); ?></label>
+<label for="random_password_length"><?php _e("Random Password Length", "bodi0-password-generator"); ?></label>
 </th>
-<td><input type="number" step="1" name="random_password_length" id="random_password_length" size="3" value="8" style="width:64px"> <a href="javascript:void(0);" onclick="generate_random_password($('#character_lowercase').attr('checked'),$('#character_uppercase').attr('checked'), $('#character_numbers').attr('checked'), $('#character_specials').attr('checked'))"><?php _e("Generate", "bodi0-password-generator"); ?></a> <span id="random_password_text"></span> <a href="javascript:void(0)" onclick="$('#pass1').val($('#random_password_text').html()); $('#pass2').val($('#random_password_text').html()); "><?php _e("Use this password", "bodi0-password-generator"); ?></a></td>
+<td><input type="number" step="1" name="random_password_length" id="random_password_length" size="3" value="8" max="4096" style="width:64px" title="<?php _e("Wordpress limit password length up to 4096 characters","bodi0-password-generator");?>"> <a href="javascript:void(0);" onClick="generate_random_password($('#character_lowercase').attr('checked'),$('#character_uppercase').attr('checked'), $('#character_numbers').attr('checked'), $('#character_specials').attr('checked'))"><?php _e("Generate", "bodi0-password-generator"); ?></a> <span id="random_password_text"></span> <a href="javascript:void(0)" onClick="$('#pass1').val($('#random_password_text').html()); $('#pass2').val($('#random_password_text').html()); "><?php _e("Use this password", "bodi0-password-generator"); ?></a></td>
 </tr>
 <tr>
-<th scope="row"><?php _e("Character Sets", "bodi0-password-generator"); ?></th>
+<th scope="row">
+<label for="letter-charsets">
+<?php _e("Character Sets", "bodi0-password-generator"); ?></label></th>
 <td><span><input type="checkbox" name="character_lowercase" id="character_lowercase" checked><?php _e("lower case", "bodi0-password-generator"); ?></span> <span><input type="checkbox" name="character_uppercase" id="character_uppercase" checked><?php _e("UPPER CASE", "bodi0-password-generator"); ?></span> <span><input type="checkbox" name="character_numbers" id="character_numbers" checked><?php _e("Numbers", "bodi0-password-generator"); ?></span> <span><input type="checkbox" name="character_specials" id="character_specials" checked><?php _e("Special", "bodi0-password-generator"); ?></span></td>
 </tr>
 </tbody>
 <tfoot></tfoot>
 </table>
-</form>

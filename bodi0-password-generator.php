@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or exit();
 Plugin Name: bodi0`s Password generator
 Plugin URI: http://
 Description: Generating and using random sequence of numbers and/or text or special characters in password fields while creating or editiing users, brain-free.
-Version: 0.1
+Version: 0.2
 Text Domain: bodi0-password-generator
 Domain Path: /languages
 Author: Budiony Damyanov

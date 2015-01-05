@@ -3,8 +3,8 @@ Contributors: budiony
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LKG7EXVNPJ7EN&amp;currency_code=EUR
 Tags: user management, password, generator, strong password, modify user, password generator, usability, user password generator
 Requires at least: 3.1.0
-Tested up to: 4.0.1
-Stable tag: 0.1
+Tested up to: 4.1.0
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ None
 None
 
 == Changelog ==
+
+= 0.2 =
+Bug-fixes in user form.
+Added Spanish language translation.
 
 = 0.1 =
 Initial release.
