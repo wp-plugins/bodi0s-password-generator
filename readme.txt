@@ -3,7 +3,7 @@ Contributors: budiony
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LKG7EXVNPJ7EN&amp;currency_code=EUR
 Tags: user management, password, generator, strong password, modify user, password generator, usability, user password generator
 Requires at least: 3.1.0
-Tested up to: 4.1.0
+Tested up to: 4.2.2
 Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
